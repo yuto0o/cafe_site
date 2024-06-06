@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.header.header-access{
+  background:url(../img/access/hero_access.jpg) no-repeat center center/cover;/*背景画像を指定*/
+}
+
+.wrapper{
+  max-width: 960px;/*画面最大幅を960px*/
+  margin: 0 auto;/*上下の外余白を0、左右の外余白を自動に*/
+  padding: 0 4%;/*上下の内余白を0に、左右の内余白を4%*/
+}
+
+.section-access{
+  padding: 30px 0 50px;/*内余白を上30px 左右0  下50px*/
+}
+
+@media print, screen and (min-width: 768px){
+  .section-access{
+    padding: 60px 0 100px;
+    max-width: 700px;
+    margin:0 auto;
+  }
+}
+
+.access-img{
+  margin-bottom:15px;/*外余白の下部を15px*/
+}
+
+@media print, screen and (min-width: 768px){
+.access-img{
+  width: 50%;
+  max-width: 300px;
+  padding-right: 20px;
+ }
+}
+
+.address{
+  margin-bottom: 20px;/*外余白の下部を20px*/
+}
+
+.address dt{
+  font-size: 12px;/*文字サイズ12px*/
+  margin-bottom:10px;/*外余白の下部を10px*/
+}
+
+.access-name{
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","MS P明朝","MS 明朝",serif;/*フォントの種類の指定*/
+  font-size: 20px;/*文字サイズ20px*/
+  font-weight: bold;/*太字*/
+  margin-bottom:15px;/*外余白の下部を15px*/
+}
+
+.address-test{
+  font-size: 14px;/*文字サイズ14px*/
+  line-height:1.67;/*行の高さをフォントサイズの1.67倍に*/
+  margin-bottom:10px;/*外余白の下部を10px*/
+}
+
+.address-contact{
+  font-size: 12px;/*文字サイズ12px*/
+  line-height:1.5;/*行の高さをフォントサイズの1.5倍に*/
+}
+
+@media print, screen and (min-width: 768px){
+  .access-block{
+    display: -webkit-flex;/*子要素を並列に*/
+    display:-ms-flexbox;
+    display: flex;
+    justify-content: center;/*並列になった要素の幅を均等に*/
+    margin-bottom: 40px;
+  }
+}
+
+.map{
+  position: relative;/*要素の配置を相対座標にしてい*/
+  width: 100%;/*要素の幅100%に指定*/
+  height:0;/*要素の高さ0*/
+  padding-bottom: 75%;/*内余白の下部を75%*/
+}
+
+.map iframe{
+  width:100%;/*要素の幅100%に指定*/
+  height: 100%;/*要素の高さ0*/
+  position: absolute;/*要素の配置を絶対座標に指定*/
+  top: 0;/*上部分を基準点から0の位置に*/
+  left: 0;/*左部分を基準点から0の位置に*/
+  bottom:0;/*下部分を基準点から0の位置に*/
+  right:0;/*右部分を基準点から0の位置に*/
+}
